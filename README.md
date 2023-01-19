@@ -4,6 +4,15 @@
  Additionally, VisageVerify can also be used to detect AI-generated images that do not accurately depict the subject intended to be in the image, making it an excellent tool for sifting through large amounts of images to find any potential inaccuracies or manipulations. With its advanced facial recognition technology, VisageVerify ensures that the images you work with are accurate and trustworthy.
  
 
+Instructions:
+ 1. Clone Repo or Download VisageVerify.py, and then Run VisageVerify.py
+ 3. Select a reference folder (this folder must contain images of the person's face that you are attempting to detect, atleast one is required)
+ 4. Select a compare folder (this folder must contain images of faces you wish to compare the reference images to, atleast one is required)
+ 5. An image in the compare folder will be displayed with the percentage of the best match found within your reference folder
+ 6. Press [K] to keep the image, [D] to delete the image, or [C] to cancel the program.
+ 7. After making a selection the next image will be displayed.
+
+
 Changelog:
 
 v1.0:
@@ -26,4 +35,8 @@ v2.0 (WIP):
 
     Refactored Code
 
-    TO-DO: Fast Scan Feature, Auto Delete Feature
+    TO-DO: 
+     Fast Scan Feature (stop scanning reference images if a specific match percentage is already found)
+     Auto Delete Feature (automatically delete compared images that do not meet specific match percentage)
+     Skip Feature (do not display images that do not meet a specific match percentage)
+     Installable Executable
