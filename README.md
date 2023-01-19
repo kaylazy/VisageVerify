@@ -13,3 +13,11 @@ v1.0:
     Compares images in the comparison folder to all images in the reference folder
     Shows match percentage and best match found
     Allows user to delete or keep the images in the comparison folder
+
+v1.1:
+
+    Added progress bar using tqdm library
+    Added more detailed prompts for selecting folders
+    Added instructions for user input 
+    Changed the way reference images are stored and matched to improve performance
+    Fixed issue with images not closing after input selection
