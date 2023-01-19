@@ -20,24 +20,24 @@
 
 **v2.0 (WIP)**:
 
-    [x]    Refactored Code
-    [x]    Fast Scan Feature (stop scanning reference images if a specified match percentage value or greater is already found)
-    []     Auto Delete Feature (automatically delete compared images that do not meet specific match percentage)
-    []     Skip Feature (do not display images that do not meet a specific match percentage)
-    []     Installable Executable
+-   [x] Refactored Code
+-   [x] Fast Scan Feature (stop scanning reference images if a specified match percentage value or greater is already found)
+-   [] Auto Delete Feature (automatically delete compared images that do not meet specific match percentage)
+-   [] Skip Feature (do not display images that do not meet a specific match percentage)
+-   [] Installable Executable
 
 **v1.1**:
 
--    Added progress bar using tqdm library
--    Added more detailed prompts for selecting folders
--    Added instructions for user input 
--    Changed the way reference images are stored and matched to improve performance
--    Fixed issue with images not closing after input selection
+-   Added progress bar using tqdm library
+-   Added more detailed prompts for selecting folders
+-   Added instructions for user input 
+-   Changed the way reference images are stored and matched to improve performance
+-   Fixed issue with images not closing after input selection
 
 **v1.0**:
 
- -   Initial release
- -   Allows user to select two folders, one for reference images and one for images to compare
- -   Compares images in the comparison folder to all images in the reference folder
- -   Shows match percentage and best match found
- -   Allows user to delete or keep the images in the comparison folder
+ -  Initial release
+ -  Allows user to select two folders, one for reference images and one for images to compare
+ -  Compares images in the comparison folder to all images in the reference folder
+ -  Shows match percentage and best match found
+ -  Allows user to delete or keep the images in the comparison folder
