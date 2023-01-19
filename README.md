@@ -22,9 +22,9 @@
 
 -   [x] Refactored Code
 -   [x] Fast Scan Feature (stop scanning reference images if a specified match percentage value or greater is already found)
--   [] Auto Delete Feature (automatically delete compared images that do not meet specific match percentage)
--   [] Skip Feature (do not display images that do not meet a specific match percentage)
--   [] Installable Executable
+-   [ ] Auto Delete Feature (automatically delete compared images that do not meet specific match percentage)
+-   [ ] Skip Feature (do not display images that do not meet a specific match percentage)
+-   [ ] Installable Executable
 
 **v1.1**:
 
