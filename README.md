@@ -7,7 +7,7 @@
 
 
 ### Instructions:
- 1. Clone Repo or Download [VisageVerify.py](https://github.com/kaylazy/VisageVerify/blob/main/VisageVerify.py), and then Run VisageVerify.py
+ 1. Clone Repo or Download [VisageVerify.py](https://raw.githubusercontent.com/kaylazy/VisageVerify/main/VisageVerify.py), and then Run VisageVerify.py
  2. Select a reference folder (this folder must contain images of the person(s)'s face(s) that you are attempting to detect, atleast one is required)
  3. Select a compare folder (this folder must contain images of faces you wish to compare the reference images to, atleast one is required)
  4. An image in the compare folder will be displayed with the percentage of the best match found within your reference folder. Press [K] to keep the image, [D] to delete the image, or [C] to cancel the program.
