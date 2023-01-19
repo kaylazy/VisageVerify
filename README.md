@@ -21,3 +21,9 @@ v1.1:
     Added instructions for user input 
     Changed the way reference images are stored and matched to improve performance
     Fixed issue with images not closing after input selection
+
+v2.0 (WIP):
+
+    Refactored Code
+
+    TO-DO: Fast Scan Feature, Auto Delete Feature
