@@ -6,7 +6,7 @@
 
 Instructions:
  1. Clone Repo or Download VisageVerify.py, and then Run VisageVerify.py
- 2. Select a reference folder (this folder must contain images of the person's face that you are attempting to detect, atleast one is required)
+ 2. Select a reference folder (this folder must contain images of the person(s)'s face(s) that you are attempting to detect, atleast one is required)
  3. Select a compare folder (this folder must contain images of faces you wish to compare the reference images to, atleast one is required)
  4. An image in the compare folder will be displayed with the percentage of the best match found within your reference folder. Press [K] to keep the image, [D] to delete the image, or [C] to cancel the program.
  5. After making a selection the next image will be displayed.
@@ -33,9 +33,9 @@ v1.1:
 v2.0 (WIP):
 
     Refactored Code
+    Fast Scan Feature (stop scanning reference images if a specified match percentage value or greater is already found)
 
     TO-DO: 
-     Fast Scan Feature (stop scanning reference images if a specific match percentage is already found)
      Auto Delete Feature (automatically delete compared images that do not meet specific match percentage)
      Skip Feature (do not display images that do not meet a specific match percentage)
      Installable Executable

@@ -35,7 +35,7 @@ def load_reference_images(reference_folder_path):
             reference_images.append((filename, image))
     return reference_images
 
-def find_best_match(reference_images, unknown_encoding):
+def find_best_match(reference_images, unknown_encoding, use_fast_scan = 0, fast_scan_thres = 1):
     """
     find the best match from the reference images and return the best match's file name and match percentage
     """
@@ -45,7 +45,11 @@ def find_best_match(reference_images, unknown_encoding):
         for reference_filename, reference_image in reference_images:
             reference_encoding = face_recognition.face_encodings(reference_image)[0]
             match_percentage = 1-compare_faces(reference_encoding, unknown_encoding)
-            if match_percentage > max_match:
+            if use_fast_scan and match_percentage >= fast_scan_thres:
+                reference_match = reference_filename
+                match_percentage = "%.2f%%" % (100 * match_percentage)
+                return reference_match, match_percentage
+            elif match_percentage > max_match:
                 max_match = match_percentage
                 reference_match = reference_filename
             pbar.update(1)
@@ -56,13 +60,17 @@ def main():
     reference_folder_path = select_folder("Select Reference Folder")
     images_folder_path = select_folder("Select Compare Folder")
     reference_images = load_reference_images(reference_folder_path)
+    fast_scan_enabled = input("Do you want to enable FastScan? (y/n): ") == 'y'
+    fast_scan_threshold = 0
+    if fast_scan_enabled:
+        fast_scan_threshold = float(input("Enter FastScan threshold value between 0 and 1 (e.g. 0.55): "))        
     print("Press 'k' to keep, 'd' to delete, 'c' to cancel")
     for filename in os.listdir(images_folder_path):
         if filename.endswith(".jpg") or filename.endswith(".jpeg") or filename.endswith(".png"):
             unknown_image_path = os.path.join(images_folder_path, filename)
             unknown_image = face_recognition.load_image_file(unknown_image_path)
             unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
-            best_match, match_percentage = find_best_match(reference_images, unknown_encoding)
+            best_match, match_percentage = find_best_match(reference_images, unknown_encoding, fast_scan_enabled, fast_scan_threshold)
             if match_percentage != 0:
                 print("Match found:", filename, " - ", match_percentage, " - Best match: ", best_match)
                 img = cv2.imread(unknown_image_path)
