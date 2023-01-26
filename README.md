@@ -27,7 +27,7 @@
 -   [x] Compatibility for images containing multiple faces
 -   [x] Fixed error when importing an image not containing faces
 -   [x] Added colored text (Higher percentage values are shown in yellow to green, while lower values are plain white)
--   [ ] --Installable Executable-- (Scrapping since I had issues with auto-py-to-exe, might try to implement kivy instead in the future)
+-   [ ] ~~Installable Executable~~ (Scrapping since I had issues with auto-py-to-exe, might try to implement kivy instead in the future)
 
 **v1.1**:
 
