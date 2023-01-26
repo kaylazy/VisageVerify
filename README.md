@@ -18,13 +18,16 @@
 
 ### Release Notes:
 
-**v2.0 (WIP)**:
+**v2.0**:
 
 -   [x] Refactored Code
 -   [x] Fast Scan Feature (stop scanning reference images if a specified match percentage value or greater is already found)
--   [ ] Auto Delete Feature (automatically delete compared images that do not meet specific match percentage)
--   [ ] Skip Feature (do not display images that do not meet a specific match percentage)
--   [ ] Installable Executable
+-   [x] Auto Delete Feature (automatically delete compared images that do not meet specific match percentage)
+-   [x] Skip Feature (do not display images that do not meet a specific match percentage)
+-   [x] Compatibility for images containing multiple faces
+-   [x] Fixed error when importing an image not containing faces
+-   [x] Added colored text (Higher percentage values are shown in yellow to green, while lower values are plain white)
+-   [ ] --Installable Executable-- (Scrapping since I had issues with auto-py-to-exe, might try to implement kivy instead in the future)
 
 **v1.1**:
 
